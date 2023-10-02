@@ -56,6 +56,7 @@ function gerarTabela() {
             td.style.height = "50px";
             td.style.border = 'solid black 1px';
             td.style.backgroundColor = "white";
+            td.onclick = colorindo;
             tr.appendChild(td);
         }
         
@@ -75,11 +76,10 @@ function setSelect(event) {
     }
 
     event.target.classList.add('selected');
-    capturaCor();
 }
 
-function capturaCor(){
+function colorindo(event) {
     let itemSelecionado = document.querySelector('.selected');
     let corDoitem = itemSelecionado.style.backgroundColor;
-    console.log(`capturei a cor: ${corDoitem}`);
+    event.target.style.backgroundColor = corDoitem;
 }

@@ -31,3 +31,8 @@
 - A classe selected deve ser adicionada à cor selecionada na paleta, ao mesmo tempo em que é removida da cor anteriormente selecionada.
 - Somente uma das cores da paleta deve ter a classe selected de cada vez;
 - Note que os elementos que deverão receber a classe selected devem ser os mesmos elementos que possuem a classe color, como especificado no requisito 2.
+
+8. Clicar em um pixel dentro do quadro após selecionar uma cor na paleta faz com que o pixel seja preenchido com a cor selecionada:
+- Ao carregar a página deve ser possível pintar os pixels de preto.
+- Após selecionar uma outra cor na paleta, é possível pintar os pixels com essa cor.
+- Somente o pixel que foi clicado foi preenchido com a cor selecionada, sem influenciar na cor dos demais pixels.
