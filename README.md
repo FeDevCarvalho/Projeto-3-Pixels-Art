@@ -19,3 +19,15 @@
 - O quadro de "pixels" deve possuir o id denominado pixel-board, ao passo que cada "pixel" individual dentro do quadro deve possuir a classe denominada pixel;
 - A cor inicial dos "pixels" dentro do quadro, ao abrir a página, deve ser branca;
 - O quadro de "pixels" deve aparecer abaixo da paleta de cores.
+
+5. Pulei (era CSS da pagina).
+
+6. Defina a cor preta como cor inicial:
+- Ao carregar a página, a cor preta já deve estar selecionada para pintar os pixels:
+    - O elemento da cor preta deve possuir, inicialmente, a classe selected;
+    - Note que o elemento que deverá receber a classe selected deve ser um dos elementos que possuem a classe color, como especificado no requisito 2.
+
+7. Clicar em uma das cores da paleta faz com que ela seja selecionada e utilizada para preencher os pixels no quadro:
+- A classe selected deve ser adicionada à cor selecionada na paleta, ao mesmo tempo em que é removida da cor anteriormente selecionada.
+- Somente uma das cores da paleta deve ter a classe selected de cada vez;
+- Note que os elementos que deverão receber a classe selected devem ser os mesmos elementos que possuem a classe color, como especificado no requisito 2.
