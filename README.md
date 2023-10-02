@@ -13,3 +13,9 @@
 3. Adicione a cor preta como a primeira cor da paleta de cores:
 - A primeira cor da paleta é preta
 - As demais cores podem ser escolhidas livremente.
+
+4. Adicione à página um quadro de pixels, com 25 pixels:
+- O quadro de "pixels" deve ter 5 elementos de largura e 5 elementos de comprimento;
+- O quadro de "pixels" deve possuir o id denominado pixel-board, ao passo que cada "pixel" individual dentro do quadro deve possuir a classe denominada pixel;
+- A cor inicial dos "pixels" dentro do quadro, ao abrir a página, deve ser branca;
+- O quadro de "pixels" deve aparecer abaixo da paleta de cores.

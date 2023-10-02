@@ -12,11 +12,9 @@ function gerarPixels() {
             li.style.width = "50px";
             li.style.height = "50px";
             ul.appendChild(li);
-            if(indez === 0) {
-                console.log("Estou no preto");
+            if (indez === 0) {
                 li.style.backgroundColor = "black";
             } else {
-                console.log("Estou no colorido");
                 li.style.backgroundColor = corAleatoria();
             }
         }
@@ -39,4 +37,32 @@ function gerarCores() {
         cores[index].style.backgroundColor = corAleatoria();
 
     }
-}  
+}
+
+
+function gerarTabela() {
+    let itemDeTroca = document.getElementById('tabela');
+    let table = document.createElement('table');
+    table.id = "pixel-board";
+    table.style.display = "inline-block";
+
+    for (let index = 0; index < 5; index += 1) {
+        let tr = document.createElement('tr');
+
+        for (let indez = 0; indez < 5; indez += 1) {
+            let td = document.createElement('td')
+            td.className = "pixel";
+            td.style.width = "50px";
+            td.style.height = "50px";
+            td.style.border = 'solid black 1px';
+            td.style.backgroundColor = "white";
+            tr.appendChild(td);
+        }
+
+        table.appendChild(tr);
+    }
+
+
+    itemDeTroca.replaceWith(table);
+}
+gerarTabela();
