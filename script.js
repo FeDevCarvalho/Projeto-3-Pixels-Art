@@ -83,3 +83,11 @@ function colorindo(event) {
     let corDoitem = itemSelecionado.style.backgroundColor;
     event.target.style.backgroundColor = corDoitem;
 }
+
+
+function clearBoard() {
+    let tabela = document.getElementsByClassName('pixel');
+    for(index = 0; index < tabela.length; index += 1) {
+        tabela[index].style.background = "white";
+    }
+}

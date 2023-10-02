@@ -36,3 +36,7 @@
 - Ao carregar a página deve ser possível pintar os pixels de preto.
 - Após selecionar uma outra cor na paleta, é possível pintar os pixels com essa cor.
 - Somente o pixel que foi clicado foi preenchido com a cor selecionada, sem influenciar na cor dos demais pixels.
+
+9. Crie um botão que, ao ser clicado, limpa o quadro preenchendo a cor de todos seus pixels com branco:
+- O botão tem o id denominado clear-board.
+- O botão está posicionado entre a paleta de cores e o quadro de pixels.
