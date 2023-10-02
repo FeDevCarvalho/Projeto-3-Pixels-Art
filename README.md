@@ -9,3 +9,7 @@
 - Cada elemento da paleta de cores deverá ter uma borda preta, sólida e com 1 pixel de largura;
 - A paleta de cores deverá listar todas as cores disponíveis para utilização lado a lado, e deverá ser posicionada abaixo do título "Paleta de Cores";
 - A paleta de cores não deve conter cores repetidas.
+
+3. Adicione a cor preta como a primeira cor da paleta de cores:
+- A primeira cor da paleta é preta
+- As demais cores podem ser escolhidas livremente.

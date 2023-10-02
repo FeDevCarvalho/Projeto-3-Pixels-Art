@@ -11,7 +11,14 @@ function gerarPixels() {
             li.style.border = "2px solid black";
             li.style.width = "50px";
             li.style.height = "50px";
-            ul.appendChild(li)
+            ul.appendChild(li);
+            if(indez === 0) {
+                console.log("Estou no preto");
+                li.style.backgroundColor = "black";
+            } else {
+                console.log("Estou no colorido");
+                li.style.backgroundColor = corAleatoria();
+            }
         }
     }
 }
@@ -20,7 +27,7 @@ gerarPixels();
 function corAleatoria() {
     const letrasHex = "0123456789ABCDEF";
     let cor = "#";
-    for (let i = 0; i < 6; i++) {
+    for (let index = 0; index < 6; index += 1) {
         cor += letrasHex[Math.floor(Math.random() * 16)];
     }
     return cor;
@@ -28,8 +35,8 @@ function corAleatoria() {
 
 function gerarCores() {
     let cores = document.getElementsByClassName("colors");
-    for (let index = 0; index < cores.length; index++) {
+    for (let index = 0; index < cores.length; index += 1) {
         cores[index].style.backgroundColor = corAleatoria();
-    
-}
+
+    }
 }  
